@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "343e6cb4-9d57-4d56-94e9-b93498fb0dd2",
+		"name": "Upload And Download Files",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21617836"
+	},
+	"item": [
+		{
+			"name": "Upload File",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"type": "file",
+							"src": "/C:/Users/matti/Desktop/UploadFile/uploadPNG.png"
+						},
+						{
+							"key": "files",
+							"type": "file",
+							"src": "/C:/Users/matti/Desktop/UploadFile/uploadGIF.gif"
+						},
+						{
+							"key": "files",
+							"type": "file",
+							"src": "/C:/Users/matti/Desktop/UploadFile/uploadJPEG.jpeg"
+						},
+						{
+							"key": "files",
+							"type": "file",
+							"src": "/C:/Users/matti/Desktop/UploadFile/uploadJPG.jpg"
+						},
+						{
+							"key": "files",
+							"type": "file",
+							"src": "/C:/Users/matti/Desktop/UploadFile/uploadPDF.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Download PNG",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/download/2498fd50-7e73-426d-baa5-948cd511ce80.png",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"download",
+						"2498fd50-7e73-426d-baa5-948cd511ce80.png"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Download JPEG",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/download/c32342b1-8b60-4fd9-8f24-9f51e9e36496.jpeg",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"download",
+						"c32342b1-8b60-4fd9-8f24-9f51e9e36496.jpeg"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Download PDF",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/download/99dfe887-3213-49ea-987f-c83b65b5054e.pdf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"download",
+						"99dfe887-3213-49ea-987f-c83b65b5054e.pdf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Download GIF",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/download/d54fc0a2-c9be-4c84-85bc-a44c21e625fe.gif",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"download",
+						"d54fc0a2-c9be-4c84-85bc-a44c21e625fe.gif"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Download JPG",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/download/4b5ca847-1123-4f93-a3be-e357a552fe2d.jpg",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"download",
+						"4b5ca847-1123-4f93-a3be-e357a552fe2d.jpg"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
